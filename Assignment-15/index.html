@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-Objects</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 24px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 2em;
+        }
+        .myTable {
+            margin-top: 100px;
+        }
+        .mainBox div button {
+            border: 1px solid black;
+            background-color: transparent;
+            cursor: pointer;
+            padding: 5px;
+            transition: 1s;
+        }
+        .mainBox div button:hover {
+            background-color: black;
+            color: white;
+        }
+        .mainBox select, .mainBox option {
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .gend-Heading{
+            border-bottom: 3px dotted black;
+        }
+        table {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>OBJECTS</h1>
+    <section class="mainBox">
+
+        <div>
+            <select name="Profession" id="selectBox">
+                <option selected disabled value="">Select Your Profession</option>
+                <option value="Front-End-Developer">Front-End-Developer</option>
+                <option value="Mern-Stack-Developer">Mern-Stack-Developer</option>
+                <option value="Full-Stack-Developer">Full-Stack-Developer</option>
+            </select>
+            <br><br>
+            <select name="Education/Qualification" id="selectBox-2">
+                <option selected disabled value="">Select Your Education/Qualification</option>
+                <option value="Under-Matric">Under-Matric</option>
+                <option value="Matric/O-Level">Matric/O-Level</option>
+                <option value="Intermediate">Intermediate</option>
+                <option value="PHD">PHD</option>
+            </select>
+            <br>
+            <br>
+            <span class="gend-Heading">Select Gender:</span><br><br>
+            <label for="Gender">
+                Male:
+                <input aria-valuetext="Male" name="gender" type="radio" value="Male" class="Gender">
+                Female:
+                <input aria-valuetext="Female" name="gender" type="radio" value="Female" class="Gender">
+            </label>
+            <br>
+            <br>
+            <button onclick="result()">Result</button>
+        </div>
+    </section>
+</body>
+<script src="app.js"></script>
+
+</html>
